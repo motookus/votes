@@ -1,0 +1,108 @@
+header {
+  background-color: gray;
+  height: 60px;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+}
+
+.align {
+  text-align: center;
+}
+
+main {
+    font-weight: bold;
+  font-size: 17.5px;
+}
+
+.fukuro {
+  color: white;
+  text-shadow:
+    -2px -2px 1px #000,
+     0px -2px 1px #000,
+     2px -2px 1px #000,
+    -2px  0px 1px #000,
+     2px  0px 1px #000,
+    -2px  2px 1px #000,
+     0px  2px 1px #000,
+     2px  2px 1px #000,
+     0px  0px 3px #000; /* ぼかし効果を追加 */
+}
+
+.gap {
+  display: flex;
+  justify-content: center; /* ボタンを中央に寄せる */
+  gap: 120px; /* ボタン同士の間隔 */
+  margin-top: 15px;
+}
+
+.captain-button {
+  background-color: rgb(170, 102, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px; /* ←ここ！角を丸くする */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.captain-button:hover {
+  transform: scale(1.05);
+  background-color: rgb(166, 122, 57);
+}
+
+.king-button {
+  background-color: rgb(128, 255, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px; /* ←ここ！角を丸くする */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.king-button:hover {
+  transform: scale(1.05);
+  background-color: rgb(166, 253, 84);
+}
+
+.hakase-button {
+  background-color: rgb(0, 251, 255);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 50px; /* ←ここ！角を丸くする */
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.hakase-button:hover {
+  transform: scale(1.05);
+  background-color: rgb(139, 253, 255);
+}
+
+body {
+  background-image: url("background.png"); /* ←画像のパス */
+  background-size: cover;                 /* 画面いっぱいに拡大縮小 */
+  background-position: center center;     /* 中央に配置 */
+  background-repeat: no-repeat;           /* 繰り返しなし */
+  background-attachment: fixed;           /* スクロールしても固定（任意） */
+  margin: 0;                              /* 余白防止 */
+  height: 100vh;                          /* ビューポートの高さ確保 */
+}
+
+  .group {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* キャラ同士の距離 */
+    margin-top: 30px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column; /* 画像→ボタンを縦並び */
+    align-items: center; /* 真ん中揃え */
+    gap: 10px; /* 画像とボタンの隙間 */
+  }
